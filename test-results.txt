@@ -1,6 +1,10 @@
+FAIL: ablHill3d_pp............................    14.4824s 3.4860e-09 6.2759e-04
+FAIL: dgNonConformalThreeBlade................    41.9043s 1.1207e-10 1.6860e-06
+FAIL: drivenCavity_p1.........................    30.8286s 1.1375e-12 1.3431e-05
+FAIL: IDDESPeriodicHillEdge...................   151.8710s 1.0118e-08 5.0478e-07
+FAIL: SSTPeriodicHillEdge.....................   151.3930s 2.0884e-09 1.1462e-07
 PASS: ablHill3d_ii............................    10.8110s 8.1716e-16 3.6360e-11
 PASS: ablHill3d_ip............................    10.6031s 2.3900e-17 6.7968e-13
-FAIL: ablHill3d_pp............................    14.4824s 3.4860e-09 6.2759e-04
 PASS: ablNeutralEdge..........................    24.0670s 5.7264e-11 1.7634e-08
 PASS: ablNeutralEdgeSegregated................    19.0737s 5.3153e-11 3.5077e-08
 PASS: ablNeutralNGPHypre......................   193.3210s 7.3769e-11 3.1688e-08
@@ -24,8 +28,6 @@ PASS: dgNonConformal3dFluidsHexTet............    40.1598s 3.4694e-17 1.0636e-13
 PASS: dgNonConformalEdge......................     0.7228s 3.9554e-18 7.8552e-02
 PASS: dgNonConformalFluids....................    16.5351s 1.2079e-13 2.4047e-13
 PASS: dgNonConformalFluidsEdge................    13.8164s 1.8474e-12 8.8374e-13
-FAIL: dgNonConformalThreeBlade................    41.9043s 1.1207e-10 1.6860e-06
-FAIL: drivenCavity_p1.........................    30.8286s 1.1375e-12 1.3431e-05
 PASS: ekmanSpiral.............................     3.5486s 1.9229e-15 4.3043e-13
 PASS: ekmanSpiralConsolidated.................    12.8071s 3.6793e-15 9.1283e-13
 PASS: elemBackStepLRSST.......................     1.0546s 3.3085e-14 4.7740e-14
@@ -34,7 +36,6 @@ PASS: femHCGL.................................     1.1013s 6.8893e-17 7.8959e-02
 PASS: heatedBackStep..........................    63.5259s 3.3773e-17 1.7142e-13
 PASS: heatedWaterChannelEdge..................     4.4120s 3.7598e-08 1.5266e-09
 PASS: heatedWaterChannelElem..................     5.3924s 3.8433e-08 2.4758e-10
-FAIL: IDDESPeriodicHillEdge...................   151.8710s 1.0118e-08 5.0478e-07
 PASS: milestoneRun............................    32.2090s 4.9960e-16 2.6645e-15
 PASS: milestoneRunConsolidated................    32.9431s 3.9968e-15 2.9976e-15
 PASS: movingCylinder..........................     3.0491s 1.0132e-12 1.0127e-12
@@ -53,7 +54,6 @@ PASS: oversetSphereTIOGA......................    62.3679s 1.6263e-18 5.6621e-15
 PASS: SSTAMSChannelEdge.......................     4.9421s 9.0949e-13 4.3703e-12
 PASS: SSTAMSOversetRotCylinder................    69.1259s 2.3592e-16 1.3656e-14
 PASS: SSTChannelEdge..........................     9.3173s 9.0949e-13 4.0246e-12
-FAIL: SSTPeriodicHillEdge.....................   151.3930s 2.0884e-09 1.1462e-07
 PASS: SSTWallHumpEdge.........................    54.8525s 8.0094e-07 7.0175e-12
 PASS: steadyTaylorVortex......................    36.8672s 2.8314e-17 8.1385e-09
 PASS: taylorGreenVortex_p3....................    36.9541s 1.1691e-15 5.2730e-10
