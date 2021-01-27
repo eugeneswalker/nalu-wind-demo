@@ -13,6 +13,4 @@ spack -e . buildcache keys -it
 
 spack -e . concretize -f | tee concretize.log
 
-for i in {1..5} ; do
- spack -e . install --cache-only &
-done
+time spack -e . install --cache-only
