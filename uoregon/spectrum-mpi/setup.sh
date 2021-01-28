@@ -21,4 +21,7 @@ time spack -e . install --cache-only
 git clone https://github.com/exawind/nalu-wind
 (cd nalu-wind && git submodule update --init --recursive)
 
-
+if [ "${1}" == "1" ] ; then
+  spack load nalu-wind
+  ./run-all.sh
+fi
