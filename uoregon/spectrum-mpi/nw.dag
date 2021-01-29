@@ -1,0 +1,31 @@
+==> Concretized nalu-wind
+ -   7q324id  nalu-wind@master%gcc@7.4.0~catalyst+fftw+hypre~ipo~openfast+pic+shared+tioga+wind-utils build_type=RelWithDebInfo test_tol=default arch=linux-rhel7-power9le
+ -   lv5ayc5      ^cmake@3.17.3%gcc@7.4.0~doc+ncurses+openssl+ownlibs~qt patches=bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d,e51119dd387aa3eb2f21fee730d3aa8b5480301c5e2e3a33bd86f4f7d8903861 arch=linux-rhel7-power9le
+ -   z53n5jc          ^ncurses@6.2%gcc@7.4.0~symlinks+termlib arch=linux-rhel7-power9le
+ -   jii5opc              ^pkgconf@1.7.3%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   vukqq47          ^openssl@1.1.1i%gcc@7.4.0+systemcerts arch=linux-rhel7-power9le
+ -   snxx4ws              ^perl@5.32.0%gcc@7.4.0+cpanm+shared+threads arch=linux-rhel7-power9le
+ -   ebkqgma                  ^berkeley-db@18.1.40%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   w6oq4h6                  ^gdbm@1.18.1%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   5cdlsp6                      ^readline@8.0%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   fkwiwuh              ^zlib@1.2.11%gcc@7.4.0+optimize+pic+shared arch=linux-rhel7-power9le
+ -   3vgn2kp      ^fftw@3.3.9%gcc@7.4.0+mpi~openmp~pfft_patches precision=double,float arch=linux-rhel7-power9le
+ -   4u47noc          ^spectrum-mpi@10.03.01%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   yucwon3      ^hypre@develop%gcc@7.4.0~complex~debug+int64~internal-superlu~mixedint+mpi~openmp+shared~superlu-dist arch=linux-rhel7-power9le
+ -   n5alpjd          ^netlib-lapack@3.8.0%gcc@7.4.0~external-blas~ipo+lapacke+shared~xblas build_type=Release patches=5c79286f3d08a0b0f1f3acba2a92ee698647716ba8c6c0ae20c9cc2713e6f139,ad3d41fe9ff94b7661e09fceaf2b2e4b8c83510c1465c016e161541b4429b5ee arch=linux-rhel7-power9le
+ -   kvstwzn      ^tioga@master%gcc@7.4.0~ipo+pic+shared build_type=Release arch=linux-rhel7-power9le
+ -   fjey5zj      ^trilinos@develop%gcc@7.4.0~adios2~alloptpkgs~amesos+amesos2~anasazi~aztec+belos+boost~cgns~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext+exodus+explicit_template_instantiation~float~fortran+glm+gtest+hdf5~hwloc~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~matio~mesquite~metis~minitensor~ml+mpi+muelu~mumps+netcdf~nox~openmp~phalanx~piro+pnetcdf~python~rol~rythmos~sacado+shards+shared~shylu+stk~stratimikos~strumpack~suite-sparse+superlu~superlu-dist~teko~tempus+teuchos+tpetra~wrapper~x11~xsdkflags+zlib+zoltan+zoltan2 build_type=RelWithDebInfo cuda_arch=none cxxstd=11 gotype=long arch=linux-rhel7-power9le
+ -   n2kabpz          ^boost@1.68.0%gcc@7.4.0+atomic+chrono~clanglibcpp~container~context~coroutine+date_time~debug+exception~fiber+filesystem+graph~icu+iostreams+locale+log+math~mpi+multithreaded~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded+system~taggedlayout+test+thread+timer~versionedlayout+wave cxxstd=14 visibility=hidden arch=linux-rhel7-power9le
+ -   ofqufco              ^bzip2@1.0.6%gcc@7.4.0+shared arch=linux-rhel7-power9le
+ -   zvpjszl                  ^diffutils@3.7%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   z5ga2ok                      ^libiconv@1.16%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   dbdoazz          ^glm@0.9.7.1%gcc@7.4.0~ipo build_type=Release arch=linux-rhel7-power9le
+ -   ypr2fxa          ^hdf5@1.10.4%gcc@7.4.0+cxx~debug~fortran+hl~java+mpi+pic+shared~szip~threadsafe api=none arch=linux-rhel7-power9le
+ -   gyet2xf          ^netcdf-c@4.7.3%gcc@7.4.0~dap~hdf4~jna+mpi+parallel-netcdf+pic+shared patches=2c88dfbd6d339a0336a43b14a65a1d1df995b853b645e4af612617612a642a53 arch=linux-rhel7-power9le
+ -   626ofzr              ^m4@1.4.18%gcc@7.4.0+sigsegv patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00,fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8 arch=linux-rhel7-power9le
+ -   ytk3ka3                  ^libsigsegv@2.12%gcc@7.4.0 arch=linux-rhel7-power9le
+ -   dybg4yy              ^parallel-netcdf@1.12.1%gcc@7.4.0~burstbuffer+cxx+fortran+pic+shared arch=linux-rhel7-power9le
+ -   t7dosjs          ^superlu@4.3%gcc@7.4.0+pic arch=linux-rhel7-power9le
+ -   7ct65gp              ^tcsh@6.22.02%gcc@7.4.0 patches=392615011adb7afeb0010152409a37b150f03dbde5b534503e9cd7363b742a19,3a4e60fe56a450632140c48acbf14d22850c1d72835bf441e3f8514d6c617a9f arch=linux-rhel7-power9le
+ -   bepudle      ^yaml-cpp@0.6.2%gcc@7.4.0~ipo+pic+shared~tests build_type=Release arch=linux-rhel7-power9le
+
