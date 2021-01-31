@@ -1,7 +1,5 @@
 spack:
   view: false
-  mirrors:
-    E4S-Local: /e4s-cache
   packages:
     all:
       compiler: [gcc@7.4.0]
@@ -19,6 +17,7 @@ spack:
     mpich:
       buildable: false
       version: [3.3.2]
+      variants: ~wrapperrpath
     cmake:
       version: [3.17.3]
     binutils:
@@ -59,7 +58,7 @@ spack:
     tioga:
       version: [develop]
     nalu-wind:
-      variants: +fftw+hypre+openfast+tioga+wind-utils
+      variants: +fftw+hypre~openfast+tioga+wind-utils+cuda cuda_arch=70
     trilinos:
       version: [develop]
       variants: ~adios2~alloptpkgs~amesos+amesos2~anasazi~aztec+belos+boost~cgns~chaco~complex~debug~dtk~epetra~epetraext+exodus+explicit_template_instantiation~float~fortran~fortrilinos+glm+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~isorropia+kokkos~matio~mesquite~metis~minitensor~ml+mpi+muelu~mumps+netcdf~nox~openmp~phalanx~piro+pnetcdf~python~rol~rythmos~sacado+shards~shylu+stk~stratimikos~suite-sparse+superlu~superlu-dist~teko~tempus+teuchos+tpetra~x11~xsdkflags+zlib+zoltan+zoltan2
