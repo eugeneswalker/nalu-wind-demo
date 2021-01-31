@@ -1,16 +1,21 @@
 #!/bin/bash -e
 
-nalu_source_root=${NALU_SOURCE_ROOT:-$MEMBERWORK/gen010/nalu-wind/nalu-wind}
+spack_root=${SPACK_ROOT:-$(pwd)/spack}
+nalu_source_root=${NALU_SOURCE_ROOT:-$(pwd)/nalu-wind}
 testroot=${nalu_source_root}/reg_tests/test_files
 wd=$(pwd)
 testfile=${wd}/test-results.txt
 
+. ${spack_root}/share/spack/setup-env.sh
+
+spack load nalu-wind
+
 for t in $(cat test-list.txt) ; do
   n=$(echo $t | cut -d: -f1)
   np=$(echo $t | cut -d: -f2)
-  jsrun -p ${np} ./run-one.sh ${testroot} ${n} ${np}
   (
     cd ${testroot}/${n}
+    jsrun -n ${np} -a 1 naluX -i ${n}.yaml >/dev/null 2>&1
     ../../pass_fail.py ${n} ${n}.norm.gold | tee -a ${testfile} || :
   )
 done
