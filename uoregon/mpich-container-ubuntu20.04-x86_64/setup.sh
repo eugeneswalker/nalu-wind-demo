@@ -12,7 +12,7 @@ else
 fi
 
 echo Checking out Spack commit ${SPACK_REF} 
-cd spack && git checkout ${SPACK_REF}
+(cd spack && git checkout ${SPACK_REF})
 
 . spack/share/spack/setup-env.sh
 
