@@ -1,15 +1,18 @@
 #!/bin/bash -e
 
-SPACK_REF=5af2b1a9338563b4d382a9e12ce70537075c8363
 NALU_REF=414e27424ba6861c84a8a894b14062a83ac6ec56
+#SPACK_REF=5af2b1a9338563b4d382a9e12ce70537075c8363
+SPACK_REF=871fdc12b66ef473d879d109b72738c21d7638ec # 2-Feb-2021
 
 if [ ! -d spack ] ; then
-  echo Cloning Spack@${SPACK_REF}
+  echo Cloning Spack
   git clone https://github.com/spack/spack
-  (cd spack && git checkout ${SPACK_REF})
 else
   echo Spack cloned
 fi
+
+echo Checking out Spack commit ${SPACK_REF} 
+cd spack && git checkout ${SPACK_REF}
 
 . spack/share/spack/setup-env.sh
 
@@ -22,8 +25,6 @@ spack gpg trust e4s.pub
 #echo Installing GCC@7.4.0
 #spack install --cache-only gcc@7.4.0 %gcc@4.8.5 target=x86_64
 #spack compiler add $(spack location -i gcc@7.4.0)
-
-spack -e . concretize -f | tee nw.dag
 
 echo Installing nalu-wind from cache
 time spack -e . install --cache-only
