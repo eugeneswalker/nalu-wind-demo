@@ -1,5 +1,7 @@
 spack:
   view: false
+  mirrors:
+    E4S: https://cache.e4s.io/nalu
   packages:
     all:
       compiler: [gcc@7.5.0]
